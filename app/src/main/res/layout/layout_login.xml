@@ -46,9 +46,8 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/cirLoginButton"
+        android:id="@+id/Login_Button"
         style="@style/loginButton"
-        android:background="@drawable/login_button_bk"
         android:text="Login"
         android:layout_gravity="right"
         android:layout_marginTop="@dimen/loginViewsMargin"/>
