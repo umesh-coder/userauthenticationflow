@@ -19,4 +19,6 @@
 
     <!--colros for card-->
     <color name="whiteCardColor">#fff</color>
+
+    <color name="btn">#FC8822</color>
 </resources>

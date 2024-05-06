@@ -50,7 +50,11 @@
         style="@style/loginButton"
         android:text="Login"
         android:layout_gravity="right"
-        android:layout_marginTop="@dimen/loginViewsMargin"/>
+        android:layout_marginTop="@dimen/loginViewsMargin"
+
+
+
+        />
 
     <TextView
         android:id="@+id/register_button"

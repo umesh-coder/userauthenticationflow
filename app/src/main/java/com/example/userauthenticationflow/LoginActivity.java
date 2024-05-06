@@ -1,5 +1,6 @@
 package com.example.userauthenticationflow;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -74,6 +75,7 @@ private  String retrievedEmail ,  retrievedPassword , retrivedName , retrivedMob
         startActivity(userprofile);
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     private void initializeViews() {
 
         registerButton=findViewById(R.id.register_button);
@@ -84,6 +86,9 @@ private  String retrievedEmail ,  retrievedPassword , retrivedName , retrivedMob
 
         LogInButton.setTextColor(getColor(R.color.white));
         LogInButton.setTypeface(null, Typeface.BOLD);
+
+//        LogInButton.setBackground(getDrawable(R.drawable.login_button_bk));
+        LogInButton.setBackgroundColor(getColor(R.color.btn));
 
     }
 

@@ -3,6 +3,7 @@
     <corners
         android:radius="27dp"
         />
+
     <gradient
         android:angle="45"
         android:centerX="35%"
@@ -10,6 +11,7 @@
         android:endColor="#FFB129"
         android:type="linear"
         />
+
     <size
         android:width="182dp"
         android:height="54dp"

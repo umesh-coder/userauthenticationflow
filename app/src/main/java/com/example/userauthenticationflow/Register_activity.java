@@ -69,9 +69,6 @@ public class Register_activity extends AppCompatActivity {
         startActivity(login);
     }
 
-
-
-
     private void initializeViews() {
         name=findViewById(R.id.editTextName);
         mobileNo=findViewById(R.id.editTextMobile);
@@ -82,7 +79,7 @@ public class Register_activity extends AppCompatActivity {
         signInButton=findViewById(R.id.signin_button);
 
 
-
+        registerButton.setBackgroundColor(getColor(R.color.btn));
         registerButton.setTextColor(getColor(R.color.white));
         registerButton.setTypeface(null, Typeface.BOLD);
 
@@ -92,7 +89,7 @@ public class Register_activity extends AppCompatActivity {
         boolean isValid = true;
 
         // Check if name is empty or contains non-alphabetic characters
-        if(name.getText().toString().isEmpty() || !name.getText().toString().matches("[a-zA-Z]+")) {
+        if(name.getText().toString().trim().isEmpty() || !name.getText().toString().trim().matches("[a-zA-Z]+")) {
             name.setError("Please enter a valid name");
             isValid = false;
         }
